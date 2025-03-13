@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Awesome Blog</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            background-color: slateblue;
+            font-family: Arial, sans-serif;
+            margin-bottom: 0%; /* Setting margin-bottom to 0% */
+        }
+
+        .head {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background-color: white;
+            margin: 30px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            margin-bottom: 0%; /* Optional: If you want to remove bottom margin for .head */
+        }
+
+        .head h1 {
+            font-size: 24px;
+        }
+
+        .head ul {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+
+        .head ul li a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .head ul li a:hover {
+            color: darkblue;
+        }
+
+        #im {
+            background-color: aqua;
+            margin: 30px;
+            text-align: center;
+            padding: 30px;
+            margin-top: 0%;
+            margin-bottom: auto;
+        }
+
+        #im img {
+            width: 250px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 20px;
+            margin: 30px;
+            margin-top: 0%;
+           padding-right: 0%;
+
+        }
+
+        .article {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            flex: 3;
+            margin-top: 0%; 
+        }
+
+        .sidebar {
+            background-color: orange;
+            padding: 15px;
+            border-radius: 10px;
+            flex: 1;
+    
+        }
+
+        .article h2 a {
+            text-decoration: none;
+            color: darkblue;
+            transition: color 0.3s;
+        }
+
+        .article h2 a:hover {
+            color: red;
+        }
+
+        .article h4 {
+            margin: 5px 0;
+            color: gray;
+            
+        }
+
+        .article p {
+            text-align: justify;
+        }
+
+        .article hr {
+            border: 0.5px solid gray;
+            margin: 20px 0;
+        }
+
+        .sidebar h4 {
+            margin-top: 0;
+            background-color: red;
+            padding: 10px;
+        color: white;
+        }
+
+        .sidebar ul {
+            list-style: none;
+        }
+
+        .sidebar ul li {
+            margin: 15px 0;
+        }
+
+        .sidebar ul li a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .sidebar ul li a:hover {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <header class="head">
+        <h1>My Awesome Blog</h1>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </header>
+
+    <section id="im">
+        <img src="img/imggg.jpg" alt="Blog Image">
+    </section>
+
+    <div class="container">
+        <div class="article">
+            <h2><a href="#">Title of the First Blog</a></h2>
+            <h4>By Aziz Ali</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, quibusdam libero. Dolores velit perferendis maxime totam nostrum iure itaque quaerat laborum excepturi? At dolor vitae quasi non. Facilis, repellat similique.</p>
+            <hr>
+
+            <h2><a href="#">Title of the Second Blog</a></h2>
+            <h4>By Aziz Ali</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, quibusdam libero. Dolores velit perferendis maxime totam nostrum iure itaque quaerat laborum excepturi? At dolor vitae quasi non. Facilis, repellat similique.</p>
+        </div>
+        <aside class="sidebar">
+            <h4>Useful Links</h4>
+            <ul>
+                <li><a href="#">Azizali.com</a></li>
+                <li><a href="#">ilovecode.com</a></li>
+            </ul>
+        </aside>
+    </div>
+</body>
+</html>

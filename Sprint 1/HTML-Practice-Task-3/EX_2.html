@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+</head>
+<style>
+    .head{
+        text-align: center;
+        font-weight: bold;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    .title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        padding: 40px;
+    } 
+
+    .title::before, .title::after {
+        content: '';
+        flex: 1;
+        border-bottom: 2px solid black;
+        margin: 0 10px;
+    }
+    .imgu{
+        margin-left: 8%;
+        padding: auto;
+    }
+    .imgu img{
+        height: 40%;
+        width: 30%;
+    }
+    .para{
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .sub{
+        text-align: center;
+        padding: auto;
+    }
+ footer{
+    text-align: center;}
+</style>
+<body>
+    <h1 class="head"> Welcome UI Photo Gallery</h1>
+    <hr>
+    <div class="title">Welcome UI Photo Gallery</div>
+    <div class="imgu">
+        <img src="img/IMG-1.jpg" alt="1">
+        <img src="img/IMG-3.jpg" alt="2" >
+        <img src="img/IMG-1.jpg" alt="3">
+    </div><br>
+    <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem pariatur quam deserunt. 
+        Quis commodi quia, aliquid perferendis quos quam accusamus dolorum dolores consequuntur,
+         facilis quo quaerat, natus maxime recusandae quibusdam.Quis commodi quia, aliquid perferendis quos quam accusamus dolorum dolores consequuntur,
+         facilis quo quaerat, natus maxime recusandae quibusdam.</p>
+         <hr>
+       <h2 class="sub">Description about the page</h2> 
+       <p class="para">Dummy text sections filled with fun <b>lorem ipsum </b>make it easier to swap out one web page,
+         letter, or email version with another. For example, in a Mailchimp bulk email campaign, send 
+         these multiple versions during A/B testing to discover which call to action garners the desired response.
+    In addition, placeholder text stands out when <b>eyeballed</b>, ensuring that you overwrite the
+     correct paragraphs before updating and reissuing past appeals. 
+    Your  <b>lorem ipsum</b> generator can also provide multiple versions 
+    of a section of text on a single page surrounding the real test message.</p> 
+<hr>
+<footer>&copy; 2023 My simple WebPage.All rights reserved.</footer>
+
+
+</body>
+</html>
